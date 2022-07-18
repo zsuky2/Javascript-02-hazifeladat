@@ -52,6 +52,7 @@ function bmiKalkulator() {
 
     document.getElementById("eredmeny").classList.add("bg-dark");
     document.getElementById("eredmeny").classList.add("p-3");
+    
     document.getElementById("tulsovany").classList.remove("bg-danger");
     document.getElementById("mersekelt").classList.remove("bg-warning");
     document.getElementById("enyhensovany").classList.remove("bg-warning");
@@ -60,6 +61,7 @@ function bmiKalkulator() {
     document.getElementById("enyheelhizas").classList.remove("bg-warning");
     document.getElementById("kozepeselhizas").classList.remove("bg-warning");
     document.getElementById("koroselhizas").classList.remove("bg-danger");
+
     document.getElementById("eredmeny").classList.remove("text-warning");
     document.getElementById("eredmeny").classList.remove("text-danger");
     document.getElementById("eredmeny").classList.remove("text-success");
