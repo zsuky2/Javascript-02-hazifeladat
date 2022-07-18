@@ -17,31 +17,103 @@
 </head>
 
 <body>
-    <div class="nav text-center">
-        <a href="01_feladat.html"><i class="fa-solid fa-1 "></i></a>
-        <a href="02_feladat.html"><i class="fa-solid fa-2 "></i></a>
-        <a href="03_feladat.html"><i class="fa-solid fa-3"></i></a>
-        <a href="04_feladat.html"><i class="fa-solid fa-4"></i></a>
-        <a href="05_feladat.html"><i class="fa-solid fa-5"></i></a>
-    </div>
+
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-0">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08"
+                aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fa-solid fa-1 "></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="02_feladat.html"><i class="fa-solid fa-2 "></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="03_feladat.html"><i class="fa-solid fa-3 "></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="04_feladat.html"><i class="fa-solid fa-4 "></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="05_feladat.html"><i class="fa-solid fa-5 "></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <section class="bmi">
         <div class="container rounded-3 text-center">
             <div>
                 <h1>Testtömeg index (BMI) kalkulátor</h1>
-                <p>BMI (testtömeg index) kalkulátorunk segítségével megtudhatja, hogy mennyi az Ön BMI értéke és az melyik tartományba esik.</p>
+                <p>BMI (testtömeg index) kalkulátorunk segítségével megtudhatja, hogy mennyi az Ön BMI értéke és az
+                    melyik tartományba esik.</p>
                 <form action="" method="post">
                     <div class="mb-3">
                         <label for="testMagassag" class="form-label">Adja meg a testmagasságát (cm)! </label>
-                        <input type="number" class="form-control text-center rounded-pill" id="testMagassag" placeholder="Csak szám adható meg...">
+                        <input type="number" class="form-control text-center rounded-pill" id="testMagassag"
+                            placeholder="Csak szám adható meg...">
                     </div>
                     <div class="mb-3">
                         <label for="testTomeg" class="form-label">Adja meg a testsúlyát (kg)!</label>
-                        <input type="number" class="form-control text-center rounded-pill" id="testTomeg" placeholder="Csak szám adható meg...">
+                        <input type="number" class="form-control text-center rounded-pill" id="testTomeg"
+                            placeholder="Csak szám adható meg...">
                     </div>
                 </form>
-                <button type="button" onclick="bmiKalkulator()"
-                    class="btn btn-dark rounded-pill my-3">BMI meghatározása</button>
+                <button type="button" onclick="bmiKalkulator()" class="btn btn-dark rounded-pill my-3">BMI
+                    meghatározása</button>
                 <p id="eredmeny" class="p-3 rounded-3"></p>
+
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th>
+                            <h3>Testtömegindex (kg/m²)</h3>
+                        </th>
+                        <th>
+                            <h3>Testsúlyosztályozás</h3>
+                        </th>
+                    </tr>
+                    <tr id="tulsovany">
+                        <td>
+                            < 16 </td>
+                        <td>súlyos soványság</td>
+                    </tr>
+                    <tr id="mersekelt">
+                        <td>16-16,99</td>
+                        <td>mérsékelt soványság</td>
+                    </tr>
+                    <tr id="enyhensovany">
+                        <td>17 – 18,49</td>
+                        <td>enyhe soványság</td>
+                    </tr>
+                    <tr id="normal">
+                        <td>18,5 – 24,99</td>
+                        <td>normális testsúly</td>
+                    </tr>
+                    <tr id="tulsulyos">
+                        <td>25 – 29,99</td>
+                        <td>túlsúlyos</td>
+                    </tr>
+                    <tr id="enyheelhizas">
+                        <td>30 – 34,99</td>
+                        <td>I. fokú elhízás</td>
+                    </tr>
+                    <tr id="kozepeselhizas">
+                        <td>35 – 39,99</td>
+                        <td>II. fokú elhízás</td>
+                    </tr>
+                    <tr id="koroselhizas">
+                        <td>≥ 40</td>
+                        <td>III. fokú (súlyos) elhízás</td>
+                    </tr>
+                </table>
+
             </div>
         </div>
     </section>
@@ -54,4 +126,5 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
