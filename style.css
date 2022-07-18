@@ -2,6 +2,7 @@ body{
 
     font-family: 'Ibarra Real Nova', serif;
     line-height: 1;
+    overflow: auto;
 }
 
 
@@ -81,7 +82,7 @@ i:hover {
 }
 
 .container{
-    
+    margint-top:25px;
     background-color: rgba(148, 127, 127, 0.767);
     backdrop-filter: blur(6px);
     box-sizing: border-box;
